@@ -1,0 +1,7 @@
+<!-- Save as flat-planet.svg or paste inline -->
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" aria-hidden="true" role="img">
+  <title>Planet Logo</title>
+  <circle cx="60" cy="60" r="36" fill="#FF8A00"></circle> <!-- planet -->
+  <ellipse cx="60" cy="70" rx="46" ry="16" fill="#FFC88A" opacity="0.25" transform="rotate(-18 60 70)"></ellipse>
+  <path d="M20 65 C45 40, 75 58, 100 52" stroke="#FFB36A" stroke-width="8" fill="none" stroke-linecap="round" transform="rotate(-15 60 60)"></path>
+</svg>
