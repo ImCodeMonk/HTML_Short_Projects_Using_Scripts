@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 500px;
+}
+
+.branding {
+    display: flex;
+    flex-direction: column; /* logo + tagline stacked */
+    align-items: flex-start;
+}
+
+.branding .logo {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.branding p {
+    font-size: 1.3em;
+    color: #555;
+    margin-top: 5px;
+}
+
+header .logo{
+    position: relative;
+    color: #333;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header ul{
+    display: flex;
+    gap: 40px;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #333;
+    transition: 0.5s;
+}
+
+.container {
+    margin-top: 20px; /* move down from top */
+    margin-left: 40px; /* move closer to left edge */
+    max-width: 600px;  /* keep text from stretching */
+    text-align: left;
+}
+
+.content {
+    position: relative;
+    max-width: 800px; /* or remove max-width */
+    text-align: left; /* optional */
+}
+
+
+.content h3{
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.content span{
+    color: orange;
+    font-size: 1.5em;
+}
+
+.content p{
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.content button{
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.3s;
+    font-size: 1.2em;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.content button.chatBtn{
+    color: #333;
+    background-color: transparent;
+}
+
+.dayNight {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2em;
+}
+
+.dayNight ion-icon:nth-child(2),
+.banner.night .dayNight ion-icon:nth-child(1) {
+    display: none;
+}
+
+.banner.night {
+    background: #121212;
+}
+
+.banner.night .dayNight ion-icon:nth-child(2) {
+    display: block;
+}
+
+.banner.night{
+    background: #121212;
+}
+
+.banner.night .dayNight{
+    background-color: #333;
+    color: #fff;
+}
+
+.banner.night .header .logo,
+.banner.night .branding p,
+.banner.night .header ul li a,
+.banner.night .content h3,
+.banner.night .content p,
+.banner.night .content button{
+    color: #fff;
+}
+
+.typed-cursor {
+    color: yellow;       /* change cursor color */
+    font-weight: bold;    /* make it bold */
+    font-size: 1.5em;     /* adjust size to match text */
+    animation: blink 0.7s infinite; /* optional blink animation */
+}
+
+/* Optional blink animation */
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
