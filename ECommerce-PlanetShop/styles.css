@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #2c2c2c;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #2c2c2c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: white solid 1px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+ul li a{
+    margin: 0 5px;
+    border: 2px solid white;
+    padding: 0 10px;
+    text-decoration: none;
+    border-radius: 50px;
+    color: white;
+
+    transition: 0.3s;
+}
+
+.logo{
+    border-radius: 2px solid white;
+    size: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+}
+.logo a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: aqua;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column; /* stack planet cards vertically */
+    gap: 40px; /* spacing between cards */
+    margin: 120px 100px; /* push down from header */
+}
+
+.planet-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1f1f;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.1);
+    gap: 20px;
+}
+
+.planet-card:hover {
+    box-shadow: 0 0 30px rgba(0,255,255,0.3);
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+}
+
+.contentleft {
+    flex: 2;
+}
+
+.contentmid {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planet-img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid aqua;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.planet-img:hover {
+    transform: scale(1.1);
+}
+
+.contentright {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contentright .add-to-cart{
+    background-color: aqua;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contentright .add-to-cart:hover {
+    transform: scale(1.1); /* This will make the button slightly bigger on hover */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6); /* Optional: Adds a glowing effect */
+}
+
+.planet-card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: aqua;
+}
+
+.planet-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.signup{
+    background-color: black;
+    color: black;
+}
+
+.signup:hover{
+    background-color: aqua;
+    color: white;
+}
